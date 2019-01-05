@@ -1,0 +1,395 @@
+html {
+    overflow-y:scroll;
+}
+ 
+#container{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top:0px;
+    left:0px;
+    background:url('./images/25679.jpg')   no-repeat;
+    background-size: cover; 
+    background-attachment:fixed;
+}
+#top{
+    background-color: rgba(255, 255, 255, 0);
+   
+}
+#my-name{
+    transition: 13s ease-in;
+}
+svg{
+    position: relative;
+    top:-150px;
+    left:15%;
+    max-width: 70%;;
+}
+
+path{
+    stroke:#fff;
+    fill:rgb(255, 255, 255);
+    stroke-dasharray: 1800;
+    opacity: 10;
+    animation: svganimate 3s cubic-bezier(0,0.23,1,.8) forwards;
+}
+
+@keyframes svganimate{
+    0%{
+        fill:none;
+        stroke-dasharray: 1800;
+        opacity: 10;
+    }
+    30%{
+        fill:none;
+        stroke-dasharray: 1800;
+        opacity: 10;
+    }
+    90%{
+        fill:rgb(255,255,255,0);
+    }
+    100%{
+        fill:rgb(255, 255, 255);
+        stroke:rgb(255, 255, 255);
+        stroke-dasharray: 0;
+        opacity: 10;
+    }
+}
+
+.title{
+    position: relative;
+    top:-200px;
+}
+.titlenew{
+    position: absolute;
+    font-style: italic;
+ 
+    top:80px;
+    right:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* topside */
+#topside{
+    position: relative;
+    top:-150px;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 5%;
+    display: none;
+}
+#topside>h4{
+    font-family: 'Staatliches', cursive;
+    color:white;
+    font-size: 1.4em;
+}
+.topside-single-container::before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border:2px solid transparent;
+}
+.topside-single-container:hover   span{
+    min-height: 50px;
+    min-width: 97%;
+    font-size: 1.1em;
+    font-family: 'Staatliches', cursive;
+    color:white;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.575);
+    transition: .3s ease;
+}
+.topside-single-container:hover::before{
+    animation:borderanimate .7s linear forwards;
+}
+@keyframes borderanimate{
+    0%{
+        width:0;
+        height:0;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    50%{
+        width:100%;
+        height:0;
+        border-top-color: rgb(255, 255, 255); 
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width:100%;
+        height:100%;
+        border-top-color: rgb(255, 255, 255); 
+        border-right-color: rgb(255, 255, 255);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+.topside-single-container::after{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border:3px solid transparent;
+}
+.topside-single-container:hover::after{
+    animation:borderanimate2 .7s linear forwards;
+}
+@keyframes borderanimate2{
+    0%{
+        width:4;
+        height:0;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    50%{
+        width:0;
+        height:100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(255, 255, 255);
+    }
+    100%{
+        width:100%;
+        height:100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(255, 255, 255);
+        border-left-color: rgb(255, 255, 255);
+    }
+}
+.topside-single-container{
+    position: relative;
+    float:left;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    margin:2%;
+    cursor: pointer;
+}
+.topside-single-container:hover{
+    transform:scale(1.04);
+    transition:.2s ease-in;
+}
+.topside-single-container>span{
+    position: absolute;
+    bottom:0px;
+    z-index: 2;
+    height: 0px;
+    overflow: hidden;;
+    pointer-events: none;
+}
+.topside-single-container>img{
+    position: relative;
+    max-height: 350px;
+    min-height: 350px;
+    min-width: 100%;
+    max-width: 100%;
+    float:left;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+/* bottomside */
+#bottomside{
+    position: relative;
+    top:-120px;
+    max-width: 100%;
+    overflow: hidden;
+    padding-left: 5%;
+    display: none;
+}
+#bottomside>h4{
+    font-family: 'Staatliches', cursive;
+    color:white;
+    font-size: 1.4em;
+}
+.bottomside-single-container::before{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border:3px solid transparent;
+}
+.bottomside-single-container:hover   span{
+    min-height: 50px;
+    min-width: 97%;
+    font-size: 1.1em;
+    font-family: 'Staatliches', cursive;
+    color:white;
+    padding-left: 10px;
+    background-color: rgba(0, 0, 0, 0.575);
+    transition: .3s ease;
+}
+.bottomside-single-container:hover::before{
+    animation:borderanimate .7s linear forwards;
+}
+@keyframes borderanimate{
+    0%{
+        width:0;
+        height:0;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    50%{
+        width:100%;
+        height:0;
+        border-top-color: rgb(255, 255, 255); 
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width:100%;
+        height:100%;
+        border-top-color: rgb(255, 255, 255); 
+        border-right-color: rgb(255, 255, 255);
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}
+.bottomside-single-container::after{
+    content: '';
+    position: absolute;
+    top:-2px;
+    left:-2px;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+    border:3px solid transparent;
+}
+.bottomside-single-container:hover::after{
+    animation:borderanimate2 1s linear forwards;
+}
+@keyframes borderanimate2{
+    0%{
+        width:0;
+        height:0;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+    }
+    50%{
+        width:100%;
+        height:100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: rgb(255, 255, 255);
+    }
+    100%{
+        width:100%;
+        height:100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: rgb(255, 255, 255);
+        border-left-color: rgb(255, 255, 255);
+    }
+}
+.bottomside-single-container{
+    position: relative;
+    float:left;
+    min-width: 350px;
+    min-height: 350px;
+    max-width: 350px;
+    max-height: 350px;
+    margin:2%;
+    cursor: pointer;
+}
+.bottomside-single-container:hover{
+    transform:scale(1.04);
+    transition:.3s ease-in;
+}
+.bottomside-single-container>span{
+    position: absolute;
+    bottom:0px;
+    z-index: 2;
+ 
+    height: 0px;
+    overflow: hidden;;
+    pointer-events: none;
+}
+.bottomside-single-container>img{
+    position: relative;
+    max-height: 350px;
+    min-height: 350px;
+    min-width: 100%;
+    max-width: 100%;
+    float:left;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: white;
+    display: none;
+    font-family: 'Staatliches', cursive;
+    min-height: 40px;
+    min-width: 95%;
+    overflow: hidden;
+    max-width: 100%;
+    padding-left:5%;
+    padding-top: 20px;
+}
+
+.footer1{
+    position: relative;
+    float:left;
+    max-width: 30%;
+    min-height: 40px;
+    max-height: 40px;
+ 
+}
+.footer2{
+    position: relative;
+    float:left;
+    padding-left: 60%;
+    max-width: 20%;
+    min-width: 20%;
+    min-height: 40px;
+    max-height: 40px;
+ 
+}
