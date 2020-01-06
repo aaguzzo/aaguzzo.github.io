@@ -52,7 +52,7 @@ function navigate(){
     var bottomside3 = document.getElementsByClassName('bottomside-single-container')[2]
     bottomside3.addEventListener('click',function(){window.location.href="https://echoclubhouse.com"})
     var bottomside4 = document.getElementsByClassName('bottomside-single-container')[3]
-    bottomside4.addEventListener('click',function(){window.location.href="https://modcloth.com"})
+    bottomside4.addEventListener('click',function(){window.location.href="https://www.goorin.com"})
     var bottomside5 = document.getElementsByClassName('bottomside-single-container')[4]
     bottomside5.addEventListener('click',function(){window.location.href="https://earmilk.com"})
     var bottomside6 = document.getElementsByClassName('bottomside-single-container')[5]
